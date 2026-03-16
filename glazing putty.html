@@ -110,7 +110,7 @@
     .applications{padding:68px 8%;background:white}
     .applications h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(28px,3vw,44px);color:var(--dark);margin-bottom:6px;letter-spacing:1px}
     .applications .sub{font-size:14px;color:var(--mid-gray);margin-bottom:40px;font-weight:300}
-    .app-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .app-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .app-card{background:var(--off-white);border-radius:6px;padding:26px 20px;border-bottom:3px solid var(--light-gray);transition:border-color .25s,transform .25s}
     .app-card:hover{border-color:var(--red);transform:translateY(-4px)}
     .app-icon{width:38px;height:38px;background:rgba(200,16,46,.1);border-radius:6px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
@@ -138,7 +138,7 @@
     .pcard:nth-child(2){animation-delay:.16s}
     .pcard:nth-child(3){animation-delay:.24s}
 
-    @media(max-width:1100px){.products-grid{grid-template-columns:1fr 1fr}.app-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:1100px){.products-grid{grid-template-columns:1fr 1fr}.app-grid{grid-template-columns:1fr 1fr 1fr}}
     @media(max-width:900px){
       .nav-links{display:none}
       .hero{grid-template-columns:1fr}
@@ -297,30 +297,31 @@
   </div>
 </div>
 
-<!-- APPLICATIONS -->
+<!-- RECOMMENDED USES -->
 <div class="applications">
-  <h2>Where Our Putty Is Used</h2>
-  <p class="sub">Trusted across a wide range of glazing and construction applications throughout Southern Africa.</p>
+  <h2>Recommended Uses</h2>
+  <p class="sub">Our glazing putty is suited for the following applications.</p>
   <div class="app-grid">
     <div class="app-card">
-      <div class="app-icon"><svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></div>
-      <h4>Residential Windows</h4>
-      <p>Securing glass panes in timber and aluminium frames for homes and apartments.</p>
+      <div class="app-icon">
+        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
+      </div>
+      <h4>Steel Window Frames</h4>
+      <p>Ideal for securing and sealing glass panes within steel window frames for a durable, weather-tight finish.</p>
     </div>
     <div class="app-card">
-      <div class="app-icon"><svg viewBox="0 0 24 24"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10z"/></svg></div>
-      <h4>Commercial Buildings</h4>
-      <p>Professional-grade glazing for offices, retail spaces, and commercial construction.</p>
+      <div class="app-icon">
+        <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20c6 0 8-7 8-7s-2 2-6 2c0 0 3-4 7-5s5-3 5-3-2-1-5 1z"/></svg>
+      </div>
+      <h4>Timber Window Frames</h4>
+      <p>Excellent adhesion to timber frames, providing a long-lasting seal that protects against moisture and air infiltration.</p>
     </div>
     <div class="app-card">
-      <div class="app-icon"><svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg></div>
-      <h4>Renovations &amp; Repairs</h4>
-      <p>Re-glazing and surface repair of existing window frames and installations.</p>
-    </div>
-    <div class="app-card">
-      <div class="app-icon"><svg viewBox="0 0 24 24"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4z"/></svg></div>
-      <h4>Industrial Installations</h4>
-      <p>Factory and warehouse glazing requiring durable, long-lasting weatherproof seals.</p>
+      <div class="app-icon">
+        <svg viewBox="0 0 24 24"><path d="M21.92 11.6C19.72 6.5 15.05 3 9.61 3 5.22 3 1.34 5.05 0 8.34l1.78.78C3.07 6.36 6.16 5 9.61 5c4.73 0 8.72 2.98 10.65 7.4L18 14h4V10l-0.08 1.6z M9.61 7C7.48 7 5.57 7.91 4.2 9.36L5.62 10.77C6.62 9.68 8.04 9 9.61 9c2.85 0 5.28 1.79 6.39 4.34l.91 2.13c.07.17.11.34.11.53 0 .77-.63 1.4-1.4 1.4-.56 0-1.04-.33-1.27-.8l-.68-1.57C13.27 14.22 12.5 14 11.69 14H11c-1.1 0-2 .9-2 2v4h2v-4h.69l.74 1.7A3.385 3.385 0 0 0 15.61 20c1.87 0 3.39-1.52 3.39-3.39 0-.56-.14-1.08-.38-1.55l-.93-2.17C16.51 10.22 13.29 7 9.61 7z"/></svg>
+      </div>
+      <h4>Plumbing Applications</h4>
+      <p>Suitable for certain plumbing applications where a malleable, sealing compound is required.</p>
     </div>
   </div>
 </div>
